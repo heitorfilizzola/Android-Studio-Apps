@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
                         message = "Happy Birthday dg!",
                         from = "From Heitor",
                         modifier = Modifier.padding(8.dp)
-                        )
+
                 }
             }
         }
