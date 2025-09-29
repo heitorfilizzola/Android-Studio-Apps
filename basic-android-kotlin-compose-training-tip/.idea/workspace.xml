@@ -9,7 +9,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0c9ec04-d605-40e5-83be-8ff6eb74a6b9" name="Changes" comment="" />
+    <list default="true" id="f0c9ec04-d605-40e5-83be-8ff6eb74a6b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../App-Scroll/app/src/main/res/drawable-nodpi/image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App-Scroll/app/src/main/res/drawable-nodpi/image2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App-Scroll/app/src/main/res/drawable-nodpi/image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App-Scroll/app/src/main/res/drawable-nodpi/image4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +39,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -66,7 +73,10 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/heitor/Documents/Android-Studio-Codes/basic-android-kotlin-compose-training-tip"
+    "last_opened_file_path": "/home/heitor/Documents/Android-Studio-Codes/basic-android-kotlin-compose-training-tip-calculator",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RunManager" selected="Android Instrumented Tests.TipUITests">
