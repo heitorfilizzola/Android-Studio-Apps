@@ -22,7 +22,7 @@ class GameViewModel : ViewModel() {
     var userGuess by mutableStateOf("")
         private set
 
-    fun updateUserGuess(guessedWord: String){
+    fun updateUserGuess(guessedWord: String) {
         userGuess = guessedWord
     }
 
@@ -39,7 +39,7 @@ class GameViewModel : ViewModel() {
     }
 
     private fun updateGameState(updatedScore: Int) {
-        if (usedWords.size == MAX_NO_OF_WORDS){
+        if (usedWords.size == MAX_NO_OF_WORDS) {
             _uiState.update { currentState ->
                 currentState.copy(
                     isGuessedWordWrong = false,
@@ -47,7 +47,7 @@ class GameViewModel : ViewModel() {
                     isGameOver = true
                 )
             }
-        } else{
+        } else {
             _uiState.update { currentState ->
                 currentState.copy(
                     isGuessedWordWrong = false,
@@ -59,27 +59,25 @@ class GameViewModel : ViewModel() {
         }
     }
 
-        private fun shuffleCurrentWord(word: String): String {
-            val tempWord = word.toCharArray()
+    private fun shuffleCurrentWord(word: String): String {
+        val tempWord = word.toCharArray()
+        tempWord.shuffle()
+        while (String(tempWord).equals(word)) {
             tempWord.shuffle()
-            while (String(tempWord).equals(word)) {
-                tempWord.shuffle()
-            }
-            return String(tempWord)
         }
+        return String(tempWord)
+    }
 
 
-
-
-        private fun pickRandomWordAndShuffle(): String {
-            currentWord = allWords.random()
-            if (usedWords.contains(currentWord)) {
-                return pickRandomWordAndShuffle()
-            } else {
-                usedWords.add(currentWord)
-                return shuffleCurrentWord(currentWord)
-            }
+    private fun pickRandomWordAndShuffle(): String {
+        currentWord = allWords.random()
+        if (usedWords.contains(currentWord)) {
+            return pickRandomWordAndShuffle()
+        } else {
+            usedWords.add(currentWord)
+            return shuffleCurrentWord(currentWord)
         }
+    }
 
     fun resetGame() {
         usedWords.clear()
@@ -91,8 +89,8 @@ class GameViewModel : ViewModel() {
         updateUserGuess("")
     }
 
-        init {
-            resetGame()
-        }
-
+    init {
+        resetGame()
     }
+
+}
